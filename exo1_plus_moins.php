@@ -1,10 +1,10 @@
 <?php
-function prompt(string $message): string {
+function prompt($message) {
     echo $message;
     return trim(fgets(STDIN));
 }
 
-function playGame(): void {
+function playGame() {
     $secret = rand(0, 20);
     $attempts = 0;
 
